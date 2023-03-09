@@ -1,0 +1,118 @@
+.search-main-cont {
+  background-color: #131313;
+}
+.search-cont {
+  padding-left: 32px;
+  padding-right: 19px;
+  min-height: 90vh;
+}
+.search-items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+.no-results-view {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.no-results-img {
+  height: 176px;
+  width: 210px;
+  margin-bottom: 24px;
+}
+.no-results-text {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+  width: 296px;
+}
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+.failure-view {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.failure-img {
+  height: 172px;
+  width: 233px;
+}
+.failure-view-desc {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.retry-btn {
+  padding: 8px 24px;
+  width: 107px;
+  height: 40px;
+  background: #ffffff;
+  border-radius: 4px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13.5px;
+  line-height: 24px;
+  color: #171f46;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+@media (min-width: 768px) {
+  .search-cont {
+    padding-left: 165px;
+    padding-right: 135px;
+  }
+  .search-items {
+    margin-top: 32px;
+  }
+  .no-results-img {
+    width: 450px;
+    height: 378px;
+    margin-bottom: 48px;
+  }
+  .no-results-text {
+    padding: 0;
+    width: 100%;
+    font-size: 24px;
+    line-height: 31px;
+  }
+  .failure-img {
+    width: 375px;
+    height: 276px;
+  }
+  .failure-view-desc {
+    font-size: 24px;
+    line-height: 31px;
+    margin-top: 32px;
+    margin-bottom: 24px;
+  }
+  .retry-btn {
+    font-size: 14px;
+    line-height: 24px;
+    width: 110px;
+    height: 48px;
+  }
+}

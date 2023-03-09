@@ -1,0 +1,79 @@
+.not-found-main-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-size: cover;
+  background-color: #131313;
+  background-image: url('https://res.cloudinary.com/dvsaoe21n/image/upload/v1678341048/snow-removal-machine-working-high-ski-slope-snowstorm_454047-2149_1_q3j1wt.png');
+}
+.not-found-desc {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.not-found-head {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #ffffff;
+  text-align: center;
+}
+.not-found-para {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 16px;
+  margin-bottom: 13px;
+}
+.not-found-btn {
+  background-color: #ffffff;
+  border-radius: 4px;
+  padding: 8px 24px;
+  border: none;
+  width: 127px;
+  height: 40px;
+  color: #171f46;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+@media (min-width: 768px) {
+  .not-found-main-cont {
+    background-image: url('https://res.cloudinary.com/dvsaoe21n/image/upload/v1678342636/snow-removal-machine-working-high-ski-slope-snowstorm_454047-2149_1_1_iakqe3.png');
+  }
+  .not-found-desc {
+    width: 100%;
+  }
+
+  .not-found-head {
+    font-weight: 700;
+    font-size: 90px;
+    line-height: 125px;
+    color: #ffffff;
+  }
+  .not-found-para {
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 31px;
+    margin-top: 16px;
+    margin-bottom: 14px;
+  }
+  .not-found-btn {
+    padding: 12px 24px;
+    width: 127px;
+    height: 48px;
+  }
+}

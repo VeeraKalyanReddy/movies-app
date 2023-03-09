@@ -1,0 +1,337 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.movie-item-details-page {
+  background-size: cover;
+  min-height: 60vh;
+}
+.movie-item-poster-details {
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 50vh;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(24, 24, 24, 0.546875) 38.26%,
+    #131313 92.82%,
+    #131313 98.68%,
+    #131313 108.61%
+  );
+}
+.movie-item-details-main-page {
+  background-color: #131313;
+  min-height: 100vh;
+  background-size: cover;
+}
+.mid-title {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 47px;
+  color: #ffffff;
+  margin: 0px;
+}
+.overview {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+  margin: 0;
+  margin-bottom: 24px;
+}
+.more-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 177px;
+  margin: 0;
+  height: 25px;
+  margin-bottom: 16px;
+  margin-top: 8px;
+}
+.time {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+}
+.certificate {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 2px;
+  height: 25px;
+  width: 51px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.year {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+}
+.overview {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+  margin: 0;
+  margin-bottom: 24px;
+}
+.play-btn {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+  color: #171f46;
+  background-color: #ffffff;
+  border-radius: 4px;
+  height: 32px;
+  width: 76px;
+  border: none;
+  padding: 8px 24px;
+}
+.movie-details {
+  padding-left: 32px;
+  padding-right: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.info {
+  margin-right: 10px;
+}
+.info-heading {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  color: #64748b;
+  margin-bottom: 7px;
+}
+.list-items {
+  padding: 0;
+  margin: 0;
+}
+.info-items {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #ffffff;
+}
+.info-name {
+  margin-bottom: 4px;
+}
+.list-item {
+  list-style: none;
+}
+.info1 {
+  margin-top: 16px;
+}
+.similar-movies-cont {
+  padding-left: 32px;
+  padding-right: 19px;
+  margin-top: 20px;
+}
+.similar-movies-head {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 26px;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+.similar-movies-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.similar-movie-img {
+  width: 90px;
+  height: 100px;
+  border-radius: 4px;
+  margin-right: 13px;
+  margin-bottom: 16px;
+}
+
+.failure-view {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.failure-img {
+  height: 172px;
+  width: 233px;
+}
+.failure-view-desc {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.retry-btn {
+  padding: 8px 24px;
+  width: 107px;
+  height: 40px;
+  background: #ffffff;
+  border-radius: 4px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13.5px;
+  line-height: 24px;
+  color: #171f46;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+@media (min-width: 768px) {
+  .movie-item-details-page {
+    min-height: 50vh;
+  }
+  .movie-item-poster-details {
+    padding-left: 165px;
+    padding-right: 165px;
+    padding-bottom: 42px;
+    min-height: 40vh;
+  }
+
+  .mid-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 63px;
+    padding-bottom: 0;
+  }
+  .overview {
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 500;
+    width: 75%;
+    margin-bottom: 32px;
+  }
+  .play-btn {
+    width: 74px;
+    height: 40px;
+    background: #ffffff;
+    border-radius: 4px;
+  }
+  .more-details {
+    margin-bottom: 24px;
+    margin-top: 12px;
+    width: 192px;
+  }
+  .time {
+    font-size: 18px;
+    line-height: 23px;
+  }
+  .certificate {
+    font-size: 18px;
+    line-height: 23px;
+  }
+  .year {
+    font-size: 18px;
+    line-height: 23px;
+    height: 27px;
+    width: 55px;
+  }
+  .additional-information {
+    margin-top: 24px;
+    padding-left: 165px;
+    padding-right: 135px;
+  }
+  .movie-details {
+    padding: 0;
+  }
+  .info1 {
+    margin: 0;
+    margin-right: 30px;
+  }
+  .info-heading {
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 8px;
+  }
+  .info-items {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .info-name {
+    margin-bottom: 12px;
+  }
+  .similar-movies-cont {
+    width: 80vw;
+    padding: 0;
+  }
+  .similar-movies-head {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 31px;
+    margin-bottom: 24px;
+  }
+  .similar-movies-list {
+    flex-wrap: wrap;
+    list-style: none;
+  }
+  .similar-movie-img {
+    width: 255px;
+    height: 170px;
+    border-radius: 8px;
+    margin-bottom: 24px;
+    margin-right: 30px;
+  }
+  .failure-img {
+    width: 375px;
+    height: 276px;
+  }
+  .failure-view-desc {
+    font-size: 24px;
+    line-height: 31px;
+    margin-top: 32px;
+    margin-bottom: 24px;
+  }
+  .retry-btn {
+    font-size: 14px;
+    line-height: 24px;
+    width: 110px;
+    height: 48px;
+  }
+}

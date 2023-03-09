@@ -1,55 +1,50 @@
 .login-main-cont {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  width: 100vw;
-  height: 100vh;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
   padding: 32px;
-  background-size: cover;
-  background-image: url('https://res.cloudinary.com/dvsaoe21n/image/upload/v1677219435/netfilx_1_1x_wiffhy.jpg');
+  background-color: #131313;
 }
 .login-logo {
-  position: absolute;
-  width: 180px;
-  height: 52px;
-  left: 165px;
-  top: 48px;
+  height: 27px;
+  width: 100px;
+  align-self: flex-start;
 }
+
 .form-card-cont {
-  align-self: center;
-  width: 456px;
-  height: 440px;
-  background-color: #0c0b10;
-  opacity: 0.8;
-  border-radius: 8px;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   justify-content: flex-start;
-  padding: 30px;
+  margin-top: 164px;
+  width: 100%;
 }
 .login-form-head {
-  width: 78px;
-  height: 40px;
-  align-self: center;
-  color: #ffffff;
-  font-family: 'HK Grotesk';
+  font-family: 'Roboto';
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 32px;
   line-height: 40px;
-  margin-top: 50px;
+  color: #ffffff;
+  margin-bottom: 20px;
 }
 .login-form {
   display: flex;
   flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
   width: 100%;
 }
 .username {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
+  font-family: Roboto;
   font-size: 12px;
+  font-weight: 700;
   line-height: 16px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  font-style: normal;
   color: #ffffff;
   margin-bottom: 8px;
 }
@@ -68,8 +63,7 @@
   line-height: 24px;
   color: #e2e8f0;
   outline: none;
-  margin-bottom: 18px;
-  text-decoration: none;
+  margin-bottom: 16px;
 }
 .input1 {
   height: 40px;
@@ -86,19 +80,23 @@
   line-height: 24px;
   color: #e2e8f0;
   outline: none;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 .login-button {
-  left: 0px;
-  right: 0px;
-  top: 0px;
-  bottom: 0px;
-  color: #ffffff;
+  padding: 8px 20px;
   background: #e50914;
-  border-radius: 8px;
+  border-radius: 4px;
+  border: none;
   height: 40px;
-  border-radius: 8px;
-  margin-top: 35px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+  padding: 8px 20px 8px 20px;
+  margin-top: 20px;
+  cursor: pointer;
 }
 .display-error-msg {
   font-family: 'Roboto';
@@ -110,23 +108,45 @@
   color: #dc2626;
   margin-bottom: 12px;
 }
-@media (max-width: 768px) {
+
+@media (min-width: 768px) {
   .login-main-cont {
-    background-color: #131313;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100vw;
-    height: 100vh;
-    padding: 25px;
+    background-image: url('https://res.cloudinary.com/dkbxi5qts/image/upload/v1660153719/movies%20prime%20app/login_backdrop_mwiy7z.svg');
     background-size: cover;
+    padding: 48px 165px 48px 165px;
   }
   .login-logo {
-    position: absolute;
-    height: 27px;
-    width: 100px;
-    left: 32px;
-    top: 32px;
-    border-radius: 0px;
+    align-self: flex-start;
+    height: 52px;
+    width: 180px;
+  }
+  .form-card-cont {
+    justify-content: flex-start;
+    background-color: #0c0b1099;
+    box-shadow: 0px 4px 16px 0px #333333;
+    border-radius: 8px;
+    width: 456px;
+    height: 440px;
+    padding: 64px 48px 64px 48px;
+    margin: auto;
+    align-self: center;
+  }
+  .login-form-head {
+    width: 78px;
+    height: 40px;
+    align-self: center;
+    color: #ffffff;
+    font-family: 'HK Grotesk';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .input {
+    margin-bottom: 24px;
+  }
+  .display-error-msg {
+    line-height: 18px;
   }
 }

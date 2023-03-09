@@ -1,0 +1,162 @@
+.account-main-cont {
+  background-color: #131313;
+  background-size: cover;
+  min-height: 100vh;
+}
+.account-cont {
+  min-height: 65vh;
+  width: 100vw;
+  background-size: cover;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 30px 30px 40px 30px;
+}
+.account-head {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+  color: #131313;
+}
+.hori-line {
+  height: 2px;
+  width: 100%;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  background-color: #cbd5e1;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.member-ship {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  color: #94a3b8;
+}
+.membership-cont {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.gmail {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 450;
+  font-size: 16px;
+  line-height: 21px;
+  color: #1e293b;
+  margin-left: 15px;
+}
+.password {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #64748b;
+  margin-top: 8px;
+  margin-left: 15px;
+}
+.premium {
+  margin-left: 28px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 450;
+  font-size: 16px;
+  line-height: 21px;
+  color: #1e293b;
+}
+.plan-feature {
+  border: 1px solid #1e293b;
+  margin-left: 15px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 450;
+  font-size: 14px;
+  line-height: 21px;
+  color: #1e293b;
+  padding: 0px 4px 0px 4px;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+.btn-cont {
+  align-self: center;
+}
+.logout-btn {
+  background-color: #e50914;
+  border: none;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  padding: 8px 20px 8px 20px;
+  border-radius: 4px;
+  margin-top: 40px;
+}
+
+@media (min-width: 768px) {
+  .account-cont {
+    min-height: 70vh;
+    padding: 100px 160px 100px 160px;
+  }
+  .account-head {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 47px;
+    color: #131313;
+  }
+  .hori-line {
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+  .member-ship {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    color: #94a3b8;
+  }
+  .gmail {
+    font-weight: 450;
+    font-size: 20px;
+    line-height: 25px;
+    color: #1e293b;
+    margin-left: 30px;
+  }
+  .password {
+    font-weight: 450;
+    font-size: 20px;
+    line-height: 25px;
+    color: #64748b;
+    margin-top: 8px;
+    margin-left: 30px;
+  }
+  .premium {
+    font-weight: 450;
+    font-size: 20px;
+    line-height: 25px;
+    color: #1e293b;
+    margin-left: 45px;
+  }
+  .plan-feature {
+    margin-left: 20px;
+    font-weight: 450;
+    font-size: 18px;
+    line-height: 25px;
+    color: #1e293b;
+  }
+}

@@ -1,0 +1,18 @@
+.popular-img {
+  height: 100px;
+  width: 90px;
+  left: 32px;
+  top: 99px;
+  border-radius: 8px;
+  margin: 6px;
+}
+@media (min-width: 768px) {
+  .popular-img {
+    height: 170px;
+    width: 255px;
+    left: 165px;
+    top: 135px;
+    border-radius: 8px;
+    margin: 10px;
+  }
+}
