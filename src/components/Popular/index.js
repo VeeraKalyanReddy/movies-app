@@ -1,13 +1,11 @@
 import {Component} from 'react'
 import Cookies from 'js-cookie'
 import Loader from 'react-loader-spinner'
-// eslint-disable-next-line no-unused-vars
-import {FaGoogle} from 'react-icons/fa'
 import Footer from '../Footer'
 import Header from '../Header'
 import MovieItems from '../MovieItems'
-
 import './index.css'
+import FailurePage from '../FailurePage'
 
 const appConstants = {
   initial: 'INITIAL',
@@ -66,7 +64,6 @@ class Popular extends Component {
             <MovieItems details={each} key={each.id} />
           ))}
         </ul>
-        <Footer />
       </>
     )
   }
@@ -80,25 +77,7 @@ class Popular extends Component {
   )
 
   failurePopularMoviesView = () => (
-    <>
-      <div className="popular-failure-view">
-        <img
-          className="failure-img"
-          alt="failure view"
-          src="https://res.cloudinary.com/dkbxi5qts/image/upload/v1660153718/movies%20prime%20app/failure_img_vggqi4.svg"
-        />
-        <p className="popular-failure-view-desc">
-          Something went wrong, Please try again.
-        </p>
-        <button
-          onClick={this.tryAgainForPopularMoviesData}
-          className="retry-btn"
-          type="button"
-        >
-          Try Again
-        </button>
-      </div>
-    </>
+    <FailurePage tryAgain={this.tryAgainForPopularMoviesData} />
   )
 
   renderPopularSwitchView = () => {
@@ -120,6 +99,7 @@ class Popular extends Component {
       <div className="popular-page">
         <Header isPopular={isPopular} />
         {this.renderPopularSwitchView()}
+        <Footer />
       </div>
     )
   }

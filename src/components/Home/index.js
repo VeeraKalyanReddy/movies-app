@@ -181,7 +181,7 @@ class Home extends Component {
         <Header isHome={isHome} />
         <div className="home-poster">
           <h1 className="title">{title}</h1>
-          <h1 className="over-view">{overview}</h1>
+          <p className="over-view">{overview}</p>
           <button type="button" className="play-btn">
             Play
           </button>

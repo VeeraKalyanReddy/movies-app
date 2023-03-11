@@ -1,11 +1,11 @@
 import {Component} from 'react'
-
 import {format} from 'date-fns'
 import Cookies from 'js-cookie'
 import Loader from 'react-loader-spinner'
 import Header from '../Header'
 import Footer from '../Footer'
 import SimilarMovie from '../SimilarMovie'
+import FailurePage from '../FailurePage'
 import './index.css'
 
 const GenreList = props => {
@@ -202,23 +202,7 @@ class MovieItemDetails extends Component {
   failureMovieItemDetailsView = () => (
     <>
       <Header />
-      <div className="failure-view">
-        <img
-          className="failure-img"
-          alt="failure view"
-          src="https://res.cloudinary.com/dkbxi5qts/image/upload/v1660153718/movies%20prime%20app/failure_img_vggqi4.svg"
-        />
-        <p className="failure-view-desc">
-          Something went wrong, Please try again.
-        </p>
-        <button
-          onClick={this.tryAgainForMovieItemDetails}
-          className="retry-btn"
-          type="button"
-        >
-          Try Again
-        </button>
-      </div>
+      <FailurePage tryAgain={this.tryAgainForMovieItemDetails} />
     </>
   )
 
