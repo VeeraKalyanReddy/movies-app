@@ -84,13 +84,19 @@ class Search extends Component {
     </div>
   )
 
-  tryAgainForSearchResultsData = () => {
-    this.getSearchResultData()
+  tryAgainForSearchResultsData = searchValue => {
+    this.getSearchResultData(searchValue)
   }
 
-  failureSearchResultsView = () => (
-    <FailurePage tryAgain={this.tryAgainForSearchResultsData} />
-  )
+  failureSearchResultsView = () => {
+    const {searchValue} = this.state
+    return (
+      <FailurePage
+        searchValue={searchValue}
+        tryAgain={this.tryAgainForSearchResultsData}
+      />
+    )
+  }
 
   renderSearchView = () => {
     const {appStatus} = this.state

@@ -61,9 +61,11 @@ class Home extends Component {
     appTrendingStatus: appTrendingConstants.initial,
     appOriginalsStatus: appOriginalConstants.initial,
     appTopRatedStatus: appTopRatedConstants.initial,
+
     trendingMovies: [],
     topRatedMovies: [],
     originalsMovies: [],
+
     randomMovies: [],
   }
 
@@ -369,7 +371,7 @@ class Home extends Component {
   renderTopRatedSlider = () => {
     const {appTopRatedStatus} = this.state
     switch (appTopRatedStatus) {
-      case appTrendingConstants.success:
+      case appTopRatedConstants.success:
         return this.successTopRatedView()
       case appTopRatedConstants.inProgress:
         return this.inProgressView()
