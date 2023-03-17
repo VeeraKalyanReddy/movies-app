@@ -83,7 +83,8 @@ class Search extends Component {
     </div>
   )
 
-  tryAgainForSearchResultsData = searchValue => {
+  tryAgainForSearchResultsData = () => {
+    const {searchValue} = this.state
     this.getSearchResultData(searchValue)
   }
 
