@@ -43,8 +43,7 @@ class Search extends Component {
     } else {
       this.setState({
         appStatus: appConstants.failure,
-        searchResults: [],
-        searchValue: '',
+        searchValue,
       })
     }
   }
